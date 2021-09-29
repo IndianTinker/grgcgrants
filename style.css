@@ -1,0 +1,83 @@
+
+  @font-face {
+    font-family: 'Pangram';
+    src: url('NeueMontreal-Regular.eot');
+    src: url('NeueMontreal-Regular.woff') format('woff'),
+         url('NeueMontreal-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  html
+  {
+      letter-spacing: 1.5;
+  }
+  
+body
+{
+    padding: 3 rem;
+    border-top: 2px ;
+    font-family: 'Pangram', 'Helvetica Neue', sans-serif;
+    color: rgb(30, 30, 30);
+    font-size: 1.1rem;
+    display: grid;
+    grid-template-columns: 64px 1fr 64px;
+    line-height: 1.25;
+   
+
+}
+
+@media screen and (max-width: 600px) {
+   body{
+    grid-template-columns: 16px 1fr 16px;
+    font-size: 1.1rem;
+   };
+  }
+
+.heading
+{
+font-size: xx-large;
+}
+
+.topbarThick
+{
+    border-top: 5px solid;
+}
+a
+{
+    color : black
+}
+.topbar
+{
+    border-top: 2.5px solid;
+    padding-top: 4px;
+    border-bottom: 0px solid;
+    padding-bottom: 4px;
+}
+
+button
+{
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: none;
+    font-size: medium;
+}
+
+.footer{
+    border-top: 2px dotted;
+    padding-top: 1rem;
+    margin-top: 3rem;
+
+}
+
+
+
+body > article
+{
+grid-column: 2;
+}
